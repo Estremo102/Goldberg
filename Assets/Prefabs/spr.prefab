@@ -1048,8 +1048,8 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 4d9e6f2f2593db143bd1ade13183d89e, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_UpdateMode: 1
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -1117,7 +1117,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3183273083799802457, guid: e19a68599c7196f4093ffb86d792a9bf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.108
       objectReference: {fileID: 0}
     - target: {fileID: 3183273083799802457, guid: e19a68599c7196f4093ffb86d792a9bf, type: 3}
       propertyPath: m_LocalPosition.z
