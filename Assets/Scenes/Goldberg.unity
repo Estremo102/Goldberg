@@ -1791,6 +1791,22 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8133052761169287373, guid: cfe69f32c4d32ce44a6d5a1cc7708a6d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8133052761169287373, guid: cfe69f32c4d32ce44a6d5a1cc7708a6d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8133052761169287373, guid: cfe69f32c4d32ce44a6d5a1cc7708a6d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 25.230991
+      objectReference: {fileID: 0}
+    - target: {fileID: 8133052761169287373, guid: cfe69f32c4d32ce44a6d5a1cc7708a6d, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfe69f32c4d32ce44a6d5a1cc7708a6d, type: 3}
 --- !u!1 &180887916
@@ -19207,6 +19223,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1953878954}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1973396055 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2188175981578898684, guid: cfe69f32c4d32ce44a6d5a1cc7708a6d, type: 3}
+  m_PrefabInstance: {fileID: 180503378}
+  m_PrefabAsset: {fileID: 0}
+--- !u!75 &1973396062
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973396055}
+  m_Enabled: 0
+  m_Force: {x: 0, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &2003667778
 GameObject:
   m_ObjectHideFlags: 0
