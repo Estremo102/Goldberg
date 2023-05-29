@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Rope
   - Spr
+  - Domino
   layers:
   - Default
   - TransparentFX
