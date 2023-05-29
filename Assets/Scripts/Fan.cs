@@ -16,12 +16,13 @@ public class Fan : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Domino")
-            ActiveFan();
+            ActiveFan(other.gameObject);
     }
 
-    private void ActiveFan()
+    private void ActiveFan(GameObject gameObject)
     {
         animator.SetBool("ButtonPressed", true);
         domino.enabled = true;
+        gameObject.tag = "Player";
     }
 }
