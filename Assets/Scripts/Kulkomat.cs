@@ -32,7 +32,7 @@ public class Kulkomat : MonoBehaviour
             {
                 obj.AddComponent<Rigidbody>();
                 obj.layer = 12;
-                obj.GetComponent<Rigidbody>().mass = 2;
+                obj.GetComponent<Rigidbody>().mass = 4;
             }
             return;
         }
