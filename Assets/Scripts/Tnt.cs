@@ -19,6 +19,6 @@ public class Tnt : MonoBehaviour
             if (rb != null)
                 rb.AddExplosionForce(power, explosionPos, radius, 3.0F);
         }
-        targetRigidbody.AddForce(new Vector3(15000f, 0f, 0f), ForceMode.Impulse);
+        targetRigidbody.AddForce(new Vector3(10000f, 0f, 0f), ForceMode.Impulse);
     }
 }
