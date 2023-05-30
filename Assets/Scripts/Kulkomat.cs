@@ -29,7 +29,11 @@ public class Kulkomat : MonoBehaviour
         if (spawnedBalls++ > 200)
         {
             foreach (var obj in floor)
+            {
                 obj.AddComponent<Rigidbody>();
+                obj.layer = 12;
+                obj.GetComponent<Rigidbody>().mass = 2;
+            }
             return;
         }
         GameObject newBall = Instantiate(ball, spawnPoint);
