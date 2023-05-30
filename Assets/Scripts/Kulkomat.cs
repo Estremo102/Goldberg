@@ -4,15 +4,36 @@ using UnityEngine;
 
 public class Kulkomat : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private GameObject ball;
+    [SerializeField] private Transform spawnPoint;
+    [SerializeField] private Material[] materials;
+    private bool active = false;
+    private int spawnedBalls = 0;
+
+    [SerializeField] private GameObject[] floor;
+
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.tag == "Player")
+        {
+            if (!active)
+            {
+                Invoke("Spawn", 4f);
+                active = true;
+            }
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Spawn()
     {
-        
+        if (spawnedBalls++ > 200)
+        {
+            foreach (var obj in floor)
+                obj.AddComponent<Rigidbody>();
+            return;
+        }
+        GameObject newBall = Instantiate(ball, spawnPoint);
+        newBall.GetComponent<Renderer>().material = materials[Random.Range(0, materials.Length)];
+        Invoke("Spawn", 0.1f);
     }
 }
