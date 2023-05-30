@@ -5,9 +5,9 @@ using UnityEngine;
 public class Cut : MonoBehaviour
 {
     [SerializeField]
-    Rigidbody m_Rigidbody;
+    private Rigidbody rb;
     [SerializeField]
-    GameObject m_GameObject;
+    private GameObject go;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -19,8 +19,8 @@ public class Cut : MonoBehaviour
     }
 
     private void C() =>
-        m_Rigidbody.isKinematic = false;
+        rb.isKinematic = false;
 
     private void C2() =>
-        m_GameObject.SetActive(false);
+        go.SetActive(false);
 }
