@@ -23,6 +23,8 @@ public class ExplosionButton : MonoBehaviour
                 TNT.SetActive(false);
                 Invoke("StopExplosion", 4f);
             }
+        if (other.tag == "Rope")
+            other.GetComponent<Rigidbody>();
     }
 
     private void StopExplosion() => Explosion.SetActive(false);

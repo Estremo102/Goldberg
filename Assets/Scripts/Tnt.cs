@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Tnt : MonoBehaviour
 {
-    public float radius = 5.0F;
-    public float power = 10.0F;
+    [SerializeField] private float radius = 5.0F;
+    [SerializeField] private float power = 10.0F;
     [SerializeField] private Rigidbody targetRigidbody;
 
     void Start()
