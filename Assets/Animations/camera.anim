@@ -121,15 +121,9 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 0}
-    - time: 13.766666
+    - time: 14.05
       value: {fileID: 0}
-    - time: 13.783334
-      value: {fileID: 0}
-    - time: 13.883333
-      value: {fileID: 0}
-    - time: 22.7
-      value: {fileID: 0}
-    - time: 22.766666
+    - time: 22.783333
       value: {fileID: 0}
     attribute: m_LookAt
     path: 
@@ -157,9 +151,6 @@ AnimationClip:
       customType: 0
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}

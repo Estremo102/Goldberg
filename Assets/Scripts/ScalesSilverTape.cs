@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ScalesSilverTape : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject[] objectsToFreeze;
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
@@ -12,7 +14,13 @@ public class ScalesSilverTape : MonoBehaviour
             {
                 other.GetComponent<Rigidbody>().isKinematic = true;
             }
-            catch { }
+            finally
+            {
+                foreach(GameObject obj in objectsToFreeze)
+                {
+                    obj.AddComponent<FixedJoint>();
+                }
+            }
         }
     }
 }
